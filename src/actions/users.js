@@ -10,13 +10,12 @@ export const getUsersRequest = () =>
 ({
     type: Types.GET_USERS_REQUEST
 });
-
-export const getUsersSuccess = ({items}) //items: array of users be passed. When call getUsersSuccess array of users (item) comes from user API
+//items: array of users be passed. When call getUsersSuccess array of users (item) comes from user API
 //within saga, call getUsersSuccess, pass in User list from API to this {items} property
-=>
+export const getUsersSuccess = ({items}) =>
 ({
     type: Types.GET_USERS_SUCCESS,
-    payload:
+    payload: //parameter to pass in
     {
         items
     }

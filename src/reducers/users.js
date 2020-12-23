@@ -1,7 +1,7 @@
 import {Types} from '../actions/users';
 const INITIAL_STATE = 
 {
-    items = []
+    items: []
 };
 
 export default function users(state = INITIAL_STATE, action)
@@ -13,7 +13,6 @@ export default function users(state = INITIAL_STATE, action)
                 items:action.payload.items
             }
         }
-    
         default: {
             return state;
         }
